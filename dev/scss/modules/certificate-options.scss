@@ -1,0 +1,146 @@
+.certificate-options {
+  position: relative;
+  color: #FFFFFF;
+
+  .container {
+    .options-title {
+      padding-top: 146px;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      @media(max-width: 769px) {
+        padding-top: 25px;
+      }
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      &-slide {
+        background: rgba(31, 29, 54, 0.7);
+        border: 1px solid #00BADF;
+        box-shadow: 0px 1px 4px #00BADF;
+        border-radius: 7px;
+        min-width: 303px;
+        min-height: 296px;
+        padding: 24px;
+
+        .swiper-title {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+        }
+
+        .swiper-text {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          margin-bottom: 41px;
+        }
+
+        .swiper-sub-title {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+        }
+
+        .swiper-menu {
+          padding-top: 8px;
+          padding-left: 10px;
+
+          .swiper-item {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            padding-top: 8px;
+            list-style-type: disc;
+          }
+
+        }
+
+
+        .swiper-prise {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          text-transform: uppercase;
+          padding-top: 24px;
+        }
+      }
+    }
+
+    .swiper {
+      width: 100%;
+      margin: 20px auto;
+
+      .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+        content: '';
+      }
+
+      .swiper-button-prev:after, .swiper-container-rtl .swiper-button-prev:after {
+        content: '';
+      }
+
+      .swiper-button-next {
+        top: 119%;
+        right: 7%;
+        color: #00BADF;
+        margin-left: 5px;
+      }
+
+      .swiper-button-prev {
+        top: 119%;
+        left: 90%;
+        color: #00BADF;
+        @media(max-width: 1025px) {
+          left: 84%;
+        }
+        @media(max-width: 426px) {
+          left: 78%;
+        }
+        @media(max-width: 321px) {
+          left: 75%;
+        }
+
+
+      }
+
+      .swiper-pagination {
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 37px;
+        text-transform: uppercase;
+        left: 94%;
+        bottom: -27%;
+        width: 15px;
+        @media(max-width: 769px) {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .append-buttons {
+      text-align: center;
+      margin-top: 20px;
+
+      button {
+        display: inline-block;
+        cursor: pointer;
+        border: 1px solid #007aff;
+        color: #007aff;
+        text-decoration: none;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin: 0 10px;
+        font-size: 13px;
+      }
+    }
+  }
+}

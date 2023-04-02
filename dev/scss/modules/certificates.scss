@@ -1,0 +1,105 @@
+.certificates {
+  margin-top: 169px;
+
+  .container {
+    .certificates-block {
+      display: flex;
+      gap: 71px;
+      @media(max-width: 1205px) {
+        gap: 20px;
+      }
+      @media(max-width: 789px) {
+        flex-wrap: wrap;
+      }
+
+      .certificates-imag {
+        flex: 0 0 53%;
+        position: relative;
+        min-height: 250px;
+
+        @media(max-width: 789px) {
+          flex: 0 0 100%;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .certificates-about {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      line-height: 150%;
+      color: #FFFFFF;
+
+      .about-title {
+        font-weight: 700;
+        font-size: calc(30px + 30 * (100vw / 1600));
+        text-transform: uppercase;
+        @media(max-width: 767px) {
+          font-size: calc(30px + (30 + 30 * 0.7) * ((100vw - 320px) / 1600));
+        }
+      }
+
+      .about-sub-title {
+        padding-top: 20px;
+        font-weight: 400;
+        font-size: calc(16px + 2 * (100vw / 1600));
+        color: #FFFFFF;
+        @media(max-width: 767px) {
+          font-size: calc(16px + (16 + 16 * 0.7) * ((100vw - 320px) / 1600));
+        }
+      }
+
+      .about-text {
+        padding-top: 8px;
+        margin-bottom: 59px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        @media(max-width: 767px) {
+          font-size: calc(16px + (16 + 16 * 0.7) * ((100vw - 320px) / 1600));
+        }
+      }
+
+      .about-button {
+        .button-link {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          padding: 16px 65px;
+          border: 2px solid #073d48;
+          border-radius: 30px;
+          position: relative;
+
+          &:hover {
+            color: #00BADF;
+            border: 2px solid #00BADF;
+          }
+
+          //&:after {
+          //  border: 25px solid transparent;
+          //  border-left: 25px solid #00BADF;
+          //  content: "";
+          //  position: absolute;
+          //  right: 268px;
+          //  top: 0px;
+          //  transform: rotate(180deg);
+          //}
+        }
+      }
+    }
+  }
+}
+
+
+

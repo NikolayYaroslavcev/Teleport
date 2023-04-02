@@ -1,0 +1,52 @@
+section.design
+    .container
+        h2.design-title выберите дизайн сертификата
+        form.design-form
+            .choice.preview-image
+                h3.block-title  Подарочный
+                    span.certificate сертификат
+                    | на сумму
+                    span.radio-span#result ...
+                .block-item
+                    .block-form
+                        input(type="text"
+                            name="Имя получателя *"
+                            placeholder="Имя получателя *" aria-required="true")
+                        textarea(type='text'
+                            placeholder="Поле для поздравительного текста" aria-required="true")
+                p.block-number № сертификата
+            .purchase
+                .purchase-array-fake.images-fake
+                    .img-fake1.img-fake
+                    .img-fake2.img-fake
+                    .img-fake3.img-fake
+                    .img-fake4.img-fake
+                .price-block
+                    .price-checkbox
+                        .checkbox-block
+                            .radio
+                                input.radio-button#radio-1(name='radio', type='radio', checked='', value='50')
+                                label.radio-label(for='radio-1') 50 BYN
+
+                            .radio
+                                input.radio-button#radio-2(name='radio', type='radio',value='80' )
+                                label.radio-label(for='radio-2') 80 BYN
+                            .radio
+                                input.radio-button#radio-3(name='radio', type='radio',value='100')
+                                label.radio-label(for='radio-3') 100 BYN
+                            .radio
+                                input.radio-button#radio-4(name='radio', type='radio',value='150')
+                                label.radio-label(for='radio-4') 150 BYN
+                            .radio
+                                input.radio-button#radio-5(name='radio', type='radio',value='250')
+                                label.radio-label(for='radio-5') 250 BYN
+                    .price-form
+                        input(type="text"
+                            name="Имя отправителя"
+                            placeholder="Имя отправителя" aria-required="true")
+                        input#phone(type='tel', name='phone', pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}',placeholder="Телефон")
+                        input#email(type='email', pattern='.+@globex\.com', size='30', required='',placeholder="Электронная почта отправителя")
+                        input#emailTwo(type='email', pattern='.+@globex\.com', size='30', required='',placeholder="Электронная почта получателя")
+                        span *Заполните данное поле и сертификат будет отправлен на  электронную почту получателя после оплаты
+                        button(type='submit') купить сертификат
+
